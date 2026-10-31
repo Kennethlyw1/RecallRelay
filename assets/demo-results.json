@@ -1,0 +1,30 @@
+{
+  "capturedAt": "2026-10-31T09:49:55.923Z",
+  "syntheticData": true,
+  "liveSponsorServices": [
+    "Nosana",
+    "Neo4j Aura",
+    "Daytona"
+  ],
+  "firstResponse": {
+    "confirmedAffectedOrders": 4,
+    "unitsHeld": 84,
+    "noticeDrafts": 2,
+    "unresolvedOrders": 1,
+    "secondsToFirstVerifiedHold": 5.768,
+    "secondsToCompletedResponseAndSandboxStop": 8.097
+  },
+  "afterNewEvidence": {
+    "confirmedAffectedOrders": 5,
+    "unitsHeld": 116,
+    "noticeDrafts": 2,
+    "unresolvedOrders": 0,
+    "newVerifiedActions": 1,
+    "previousVerifiedActionsReused": 4
+  },
+  "repeatRun": {
+    "newVerifiedActions": 0,
+    "previousVerifiedActionsReused": 5
+  },
+  "limits": "One observed synthetic demonstration. Timing depends on network and service startup; no manual-work baseline or commercial savings is claimed."
+}

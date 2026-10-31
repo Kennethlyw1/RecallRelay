@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112923">
+  <title>RecallRelay — Recall operations</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to workspace</a>
+  <aside class="sidebar">
+    <a class="brand" href="/" aria-label="RecallRelay home"><span class="brand-symbol"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 28 10v12L16 29 4 22V10Z"/><path d="m10 16 4 4 8-9"/></svg></span>RecallRelay<span class="brand-dot">.</span></a>
+    <div class="workspace-label">OPERATIONS WORKSPACE</div>
+    <nav aria-label="Main navigation">
+      <button class="nav-item active" data-page="overview"><span data-icon="network"></span>Overview<span class="nav-mark"></span></button>
+      <button class="nav-item" data-page="orders"><span data-icon="box"></span>Orders<span id="orders-count" class="nav-count">8</span></button>
+      <button class="nav-item" data-page="evidence"><span data-icon="file"></span>Evidence library<span id="evidence-count" class="nav-count">0</span></button>
+      <button class="nav-item" data-page="audit"><span data-icon="history"></span>Activity & memory</button>
+    </nav>
+    <div class="sidebar-case"><span class="overline">CURRENT SCENARIO</span><div class="case-icon" data-icon="leaf"></div><strong>One ingredient.<br>A connected response.</strong><p>Trace basil sauce through production, orders and outlets.</p><span class="synthetic-tag">SYNTHETIC DATA</span></div>
+    <div class="sidebar-bottom"><div class="sponsor-label">POWERED BY</div><div class="sponsors">Daytona <span>·</span> Neo4j <span>·</span> Nosana</div><button class="credit-link" id="credit-button"><span class="tiny-dot"></span>Promotional credits only<span data-icon="chevron"></span></button><button class="restart" id="restart"><span data-icon="refresh"></span>Start a fresh demo</button><div class="user"><div class="avatar">RR</div><div><strong>HackSprint Singapore</strong><small>Demonstration workspace</small></div></div></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar"><div class="breadcrumbs">Workspace<span>/</span><strong id="page-name">Overview</strong></div><div class="top-actions"><span class="live-tag"><span class="tiny-dot"></span>LIVE CONNECTIONS</span><a class="button small secondary" href="/api/export" download><span data-icon="download"></span>Evidence pack</a></div></header>
+    <main id="main" tabindex="-1"><div id="content"><div class="loading-screen"><span class="spinner"></span>Connecting to the response workspace…</div></div></main>
+    <footer><span>RecallRelay · Daytona HackSprint Singapore</span><span>Fictional scenario. Holds run in a simulated order system; notices remain drafts.</span></footer>
+  </div>
+  <dialog id="document-dialog" aria-labelledby="dialog-title"><div class="dialog-top"><div><div class="overline" id="dialog-eyebrow">RECALL INTAKE</div><h2 id="dialog-title">Read the recall notice</h2></div><button class="icon-button" id="dialog-close" aria-label="Close dialog"><span data-icon="close"></span></button></div><p id="dialog-description"></p><div class="document-tools"><button class="button small secondary" id="load-fixture"><span data-icon="file"></span>Use demo notice</button><label class="button small secondary upload-label"><span data-icon="upload"></span>Choose .txt or .csv<input type="file" id="file-input" accept=".txt,.csv,text/plain,text/csv"></label><span id="file-name"></span></div><label class="field-label" for="document-text">Source document</label><textarea id="document-text" spellcheck="false"></textarea><div class="source-warning"><span data-icon="shield"></span><span>Use synthetic data for this prototype. The document will be interpreted through Nosana; extracted identifiers are checked against the source and connected records.</span></div><div class="dialog-bottom"><button class="button secondary" id="dialog-cancel">Cancel</button><button class="button primary" id="document-submit">Trace & respond<span data-icon="arrow"></span></button></div></dialog>
+  <dialog id="credit-dialog" aria-labelledby="credit-title"><div class="dialog-top"><div><div class="overline">RESOURCE CONTROLS</div><h2 id="credit-title">Within the hackathon credits</h2></div><button class="icon-button" id="credit-close" aria-label="Close resource controls"><span data-icon="close"></span></button></div><div id="credit-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

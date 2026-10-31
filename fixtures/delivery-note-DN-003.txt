@@ -1,0 +1,11 @@
+SYNTHETIC DEMO — delivery note DN-003
+Supplier: Orchard Ingredients
+Ingredient: basil sauce
+Ingredient lot: B17
+Production batch: P204
+Order: O1007
+Outlet: Airport Kitchen
+Quantity: 32 units
+Production date: 29 October 2026
+This note confirms that production batch P204 used ingredient lot B17.
+This is a fictional record for the RecallRelay demonstration.

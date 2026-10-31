@@ -1,0 +1,9 @@
+id,batch,outlet,qty,status
+"O1001","P201","HARBOUR",48,"pending"
+"O1002","P202","CENTRAL",36,"pending"
+"O1003","P202","HARBOUR",24,"delivered"
+"O1004","P203","CENTRAL",60,"pending"
+"O1005","P201","CENTRAL",18,"delivered"
+"O1006","P203","HARBOUR",40,"delivered"
+"O1007","P204","AIRPORT",32,"pending"
+"O1008","P205","AIRPORT",20,"pending"

@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/state.json
+data/usage.json
+data/runtime.json
+*.log
+screenshots/
+.build-deck/
+.codex-finalizer/
