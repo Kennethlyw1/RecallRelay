@@ -4,6 +4,16 @@
 
 **Find affected orders. Verify the response. Retain the evidence.**
 
+### For judges: the result in 30 seconds
+
+**New evidence adds a 32-unit shipment hold while reusing four previously verified actions.** The prototype traces a recalled ingredient through incomplete records, executes and verifies the response, then remembers what it has already done.
+
+- **Watch without setup:** the recorded walkthrough below and [7-slide PDF deck](deck/RecallRelay-HackSprint.pdf) require no API keys or account setup.
+- **Look for the feedback loop:** one unresolved lot connection becomes a confirmed connection; verified held units rise **84 → 116**; a recheck performs **zero new actions**.
+- **Inspect the implementation:** live **Nosana → Neo4j → Daytona → Neo4j memory** integrations, [measured demo results](assets/demo-results.json), and [automated tests](https://github.com/Kennethlyw1/RecallRelay/actions/workflows/tests.yml).
+
+All quantities come from a synthetic demonstration. Shipment holds change a simulated ledger; outlet notices remain drafts.
+
 RecallRelay connects a supplier recall to downstream production batches, orders and receiving outlets. When a production record lacks an ingredient lot, the affected order remains unresolved. A new delivery note can establish that connection and automatically continue the response without repeating previously verified actions.
 
 ## Start here: the working demonstration
